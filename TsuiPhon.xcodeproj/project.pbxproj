@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CEE351C61E118BF3E415AB6 /* Pods_TsuiPhon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04092C16A9E450FE245D310B /* Pods_TsuiPhon.framework */; };
 		7B4FB5FA2671C8E0008C761A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4FB5F92671C8E0008C761A /* AppDelegate.swift */; };
 		7B4FB5FC2671C8E0008C761A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4FB5FB2671C8E0008C761A /* SceneDelegate.swift */; };
 		7B4FB5FE2671C8E0008C761A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4FB5FD2671C8E0008C761A /* ViewController.swift */; };
 		7B4FB6012671C8E0008C761A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4FB5FF2671C8E0008C761A /* Main.storyboard */; };
 		7B4FB6032671C8E1008C761A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4FB6022671C8E1008C761A /* Assets.xcassets */; };
 		7B4FB6062671C8E1008C761A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4FB6042671C8E1008C761A /* LaunchScreen.storyboard */; };
+		7B4FB6102671C98B008C761A /* SkywayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4FB60F2671C98B008C761A /* SkywayController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04092C16A9E450FE245D310B /* Pods_TsuiPhon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TsuiPhon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1994367851F32846A78DAB /* Pods-TsuiPhon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TsuiPhon.debug.xcconfig"; path = "Target Support Files/Pods-TsuiPhon/Pods-TsuiPhon.debug.xcconfig"; sourceTree = "<group>"; };
+		588FD84634A90ED101EE4138 /* Pods-TsuiPhon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TsuiPhon.release.xcconfig"; path = "Target Support Files/Pods-TsuiPhon/Pods-TsuiPhon.release.xcconfig"; sourceTree = "<group>"; };
 		7B4FB5F62671C8E0008C761A /* TsuiPhon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TsuiPhon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4FB5F92671C8E0008C761A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B4FB5FB2671C8E0008C761A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		7B4FB6022671C8E1008C761A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B4FB6052671C8E1008C761A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B4FB6072671C8E1008C761A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4FB60F2671C98B008C761A /* SkywayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkywayController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CEE351C61E118BF3E415AB6 /* Pods_TsuiPhon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C62080E00B91F6F23608B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A1994367851F32846A78DAB /* Pods-TsuiPhon.debug.xcconfig */,
+				588FD84634A90ED101EE4138 /* Pods-TsuiPhon.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0D9D5445B51E1A09C1A0FE9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04092C16A9E450FE245D310B /* Pods_TsuiPhon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B4FB5ED2671C8E0008C761A = {
 			isa = PBXGroup;
 			children = (
 				7B4FB5F82671C8E0008C761A /* TsuiPhon */,
 				7B4FB5F72671C8E0008C761A /* Products */,
+				03C62080E00B91F6F23608B1 /* Pods */,
+				0D9D5445B51E1A09C1A0FE9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +85,7 @@
 			children = (
 				7B4FB5F92671C8E0008C761A /* AppDelegate.swift */,
 				7B4FB5FB2671C8E0008C761A /* SceneDelegate.swift */,
+				7B4FB60F2671C98B008C761A /* SkywayController.swift */,
 				7B4FB5FD2671C8E0008C761A /* ViewController.swift */,
 				7B4FB5FF2671C8E0008C761A /* Main.storyboard */,
 				7B4FB6022671C8E1008C761A /* Assets.xcassets */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B4FB60A2671C8E1008C761A /* Build configuration list for PBXNativeTarget "TsuiPhon" */;
 			buildPhases = (
+				8CD2B4976D5650CB711695E8 /* [CP] Check Pods Manifest.lock */,
 				7B4FB5F22671C8E0008C761A /* Sources */,
 				7B4FB5F32671C8E0008C761A /* Frameworks */,
 				7B4FB5F42671C8E0008C761A /* Resources */,
+				49BED299FE4B2F03B290E5F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +162,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49BED299FE4B2F03B290E5F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TsuiPhon/Pods-TsuiPhon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TsuiPhon/Pods-TsuiPhon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TsuiPhon/Pods-TsuiPhon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CD2B4976D5650CB711695E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TsuiPhon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B4FB5F22671C8E0008C761A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7B4FB5FE2671C8E0008C761A /* ViewController.swift in Sources */,
+				7B4FB6102671C98B008C761A /* SkywayController.swift in Sources */,
 				7B4FB5FA2671C8E0008C761A /* AppDelegate.swift in Sources */,
 				7B4FB5FC2671C8E0008C761A /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +356,7 @@
 		};
 		7B4FB60B2671C8E1008C761A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1994367851F32846A78DAB /* Pods-TsuiPhon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +376,7 @@
 		};
 		7B4FB60C2671C8E1008C761A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588FD84634A90ED101EE4138 /* Pods-TsuiPhon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
